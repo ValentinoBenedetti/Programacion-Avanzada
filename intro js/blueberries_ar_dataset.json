@@ -1,0 +1,192 @@
+
+{
+  "meta": {
+    "dataset": "Argentina Blueberry (Arándanos) Plantations",
+    "created_at": "2025-08-24",
+    "units": {
+      "area": "hectares",
+      "production": "tonnes"
+    },
+    "notes": [
+      "Superficie actual estimada ~2,300 ha a nivel país (descenso respecto a CNA 2018).",
+      "CNA 2018 totaliza 2,795.6 ha como referencia desagregada por provincia.",
+      "No hay coordenadas públicas por predio; los puntos son de referencia por clúster/departamento."
+    ],
+    "version": "1.0.0"
+  },
+  "totals": {
+    "area_current_estimate_ha": 2300.0,
+    "area_cna2018_ha": 2795.6,
+    "production_2022_tonnes_est": 12500.0,
+    "production_prev_avg_tonnes": 17600.0,
+    "exploitations_cna2018_count": 111
+  },
+  "provinces": [
+    {
+      "province": "Tucumán",
+      "area_cna2018_ha": 1247.4,
+      "share_of_total_pct": 44.6,
+      "exploitations_count_cna2018": 36
+    },
+    {
+      "province": "Entre Ríos",
+      "area_cna2018_ha": 821.3,
+      "share_of_total_pct": 29.4,
+      "exploitations_count_cna2018": 39
+    },
+    {
+      "province": "Buenos Aires",
+      "area_cna2018_ha": 234.6,
+      "share_of_total_pct": 8.4,
+      "exploitations_count_cna2018": 22
+    },
+    {
+      "province": "Salta",
+      "area_cna2018_ha": 185.0,
+      "share_of_total_pct": 6.6,
+      "exploitations_count_cna2018": null
+    },
+    {
+      "province": "Corrientes",
+      "area_cna2018_ha": 167.5,
+      "share_of_total_pct": 6.0,
+      "exploitations_count_cna2018": 6
+    },
+    {
+      "province": "Otros",
+      "area_cna2018_ha": 139.0,
+      "share_of_total_pct": 5.0,
+      "provinces_included": [
+        "San Luis",
+        "Catamarca",
+        "Misiones",
+        "Chubut",
+        "Córdoba",
+        "Neuquén",
+        "Río Negro",
+        "Santa Fe"
+      ],
+      "exploitations_count_cna2018_details": {
+        "Misiones": 6,
+        "Chubut": 2
+      }
+    }
+  ],
+  "clusters": [
+    {
+      "name": "NEA",
+      "areas": [
+        {
+          "province": "Entre Ríos",
+          "departments": [
+            "Concordia"
+          ],
+          "reference_point": {
+            "lat": -31.392,
+            "lon": -58.017
+          }
+        },
+        {
+          "province": "Corrientes",
+          "departments": [
+            "Bella Vista",
+            "Tabay",
+            "Mburucuyá",
+            "Virasoro",
+            "Empedrado"
+          ],
+          "reference_points": [
+            {
+              "name": "Bella Vista",
+              "lat": -28.512,
+              "lon": -59.06
+            },
+            {
+              "name": "Virasoro",
+              "lat": -28.052,
+              "lon": -56.013
+            },
+            {
+              "name": "Empedrado",
+              "lat": -27.952,
+              "lon": -58.812
+            }
+          ],
+          "area_estimate_ha": 200.0,
+          "producers_estimate": "7-8"
+        }
+      ]
+    },
+    {
+      "name": "NOA",
+      "areas": [
+        {
+          "province": "Tucumán",
+          "departments": [
+            "Monteros",
+            "Chicligasta",
+            "J.B. Alberdi",
+            "Famaillá",
+            "Tafí Viejo",
+            "Río Chico",
+            "Lules",
+            "Burruyacú",
+            "La Cocha"
+          ],
+          "reference_point": {
+            "name": "Lules/Famaillá",
+            "lat": -26.95,
+            "lon": -65.35
+          }
+        },
+        {
+          "province": "Salta",
+          "departments": []
+        },
+        {
+          "province": "Catamarca",
+          "departments": []
+        }
+      ]
+    },
+    {
+      "name": "Centro (Buenos Aires)",
+      "areas": [
+        {
+          "province": "Buenos Aires",
+          "departments": [
+            "General Pueyrredón",
+            "General Alvarado",
+            "Balcarce"
+          ],
+          "reference_points": [
+            {
+              "name": "Mar del Plata",
+              "lat": -38.0,
+              "lon": -57.55
+            },
+            {
+              "name": "Miramar",
+              "lat": -38.27,
+              "lon": -57.84
+            },
+            {
+              "name": "Balcarce",
+              "lat": -37.85,
+              "lon": -58.26
+            },
+            {
+              "name": "Mar del Sur",
+              "lat": -38.34,
+              "lon": -57.84
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Los puntos geográficos son centroids de zonas/departamentos, no predios.",
+    "Las cifras de producción son estimaciones y pueden variar por campaña."
+  ]
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #3c484e;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+.Header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header a {
+  text-decoration: none;
+  color: #15302C;
+}
+
+/* Main container */
+.Main {
+  padding: 10px;
+  grid-template-columns: minmax(auto, 976px);
+  display: grid;
+  justify-content: center;
+}
+
+/* Grid de lanzamientos */
+.Launches {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+  display: grid;
+}
+
+/* Card de cada lanzamiento en Home */
+.launch-card {
+  text-decoration: none;
+  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+  display: block;
+  background: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.launch-card:hover {
+  transform: scale(1.03);
+}
+
+.launch-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.launch-card h2 {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+  color: #15302C;
+}
+
+/* Vista detalle */
+.Launch-inner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1.5rem;
+  padding: 20px;
+}
+
+.Launch-card {
+  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  border-radius: 5px;
+  background: #fff;
+  padding: 20px;
+}
+
+.Launch-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.Launch-card h2 {
+  font-size: 22px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.Launch-card h3,
+.Launch-card p {
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: 400;
+  color: #333;
+}
+
+/* Error */
+.Error {
+  text-align: center;
+  padding: 40px;
+  color: #e74c3c;
+  font-size: 18px;
+}
